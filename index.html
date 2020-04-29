@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./style.css"></link>
+</head>
+<body>
+<div class="container">
+	<div class="paragraph">
+		<div class="empty"></div>
+		<div id="id.sol">
+			<h1 id="id.nut">Countdown Clock</h1>
+			<div id="id.clockdiv">
+				<div>
+					<span class="days"></span>
+					<div class="smalltext">Days</div>
+				</div>
+				<div>
+					<span class="hours"></span>
+					<div class="smalltext">Hours</div>
+				</div>
+				<div>
+					<span class="minutes"></span>
+					<div class="smalltext">Minutes</div>
+				</div>
+				<div>
+					<span class="seconds"></span>
+					<div class="smalltext">Seconds</div>
+				</div>
+			</div>
+		</div>
+		<div class="empty"></div>
+	</div>
+	<div class="paragraph btn-margin btn-format">
+		<a id="id.play" type="button" value="">&#9658;</a>
+		<a id="id.pause" type="button" value="">&#9616;&nbsp;&#9612;</a>
+		<a id="id.export" type="button" value="">Export Times</a>
+		<a id="id.predefined" type="button" value="">Predefined &#x25BC;</a>
+	</div>
+	<div class="paragraph btn-margin-top btn-format hide">
+		<a id="id.sec30" type="button" value="30" onClick="startVal(this)">30 Sec</a>
+		<a id="id.min1" type="button" value="60" onClick="startVal(this)">1 Min</a>
+		<a id="id.min5" type="button" value="300" onClick="startVal(this)">5 Min</a>
+		<a id="id.min10" type="button" value="600" onClick="startVal(this)">10 Min</a>
+	</div>
+	<div class="paragraph btn-margin-bottom btn-format hide">
+		<a id="id.min20" type="button" value="1200" onClick="startVal(this)">20 Min</a>
+		<a id="id.min30" type="button" value="1800" onClick="startVal(this)">30 Min</a>
+		<a id="id.min45" type="button" value="2700" onClick="startVal(this)">45 Min</a>
+		<a id="id.min60" type="button" value="3600" onClick="startVal(this)">1 Std</a>
+	</div>
+	<div class="paragraph">		
+		<input id="id.number" type="text" placeholder="value" pattern="\d" value="" maxlength="14" size="6"></input>
+		<select id="id.unit">
+			<option value="days">Days</option>
+			<option value="hours">Hours</option>
+			<option value="minutes">Minutes</option>
+			<option value="seconds">Seconds</option>
+			<option value="mixed">Mixed</option>
+		</select>
+		<input id="id.go" type="button" value="&#9658;" onClick="startManual(this)">
+	</div>
+	<div class="paragraph btn-margin">
+		<table id="id.pauseTimes">
+		</table>
+	</div>
+	<div class="paragraph infoFont hide">
+	</div>	
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.min.js"></script>
+</body>
+</html>
+
+<!-- Further ideas
+x- calculate ms for one week
+x- implement input countdown-time
+x- buttons for fast-choosing of certain time(i.e. 1 day, 1 hr, 30 min, 5 min.)
+x- buttons bisssle schoener; runder ecken, 
+x- read the written time from the input-fields
+x- make the end-event
+x- hover for the several time elements
+x- make pause and resume buttons with functionality
+x- try to use the ceil-func to round up the seconds
+x- do the immediate show-up of the inital-time whithout waiting for the very first programmatically update
+x- save the pause-values in an array and display them in an table in the GUI
+x- programm the typing possibilty
+x- export the values to a appropriate file
+	>https://www.codexworld.com/export-html-table-data-to-csv-using-javascript/
+	>https://code-maven.com/create-and-download-csv-with-javascript
+x- hide the predefined time-values in a "dropdown hover box"
+x- make the mouseout nicer with fading using jQuery
+x- offer an mixed-mode for typing a time d:hh:mm:ss
+x- message for correct x_format for mixed-mode, x_not empty check in manual, x_empty-export
+x- show the format for mixed mode after choosing it
+PERFEKT!!!
+ -->

@@ -1,0 +1,108 @@
+.paragraph{
+	text-align: center;
+}
+
+.empty{
+	display: inline-block;
+	background-color: blue;
+}
+
+#id\.sol{
+	display: inline-block;
+	text-align: center;
+	background: #00ECB9;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+#id\.nut{
+	color: #00BF96;
+	font-weight: 100;
+	font-size: 40px;
+	margin: 0px 0px 20px;	
+	background: white; 
+}
+
+.finish#id\.nut{
+	color: red;
+	font-weight: bold;
+}
+
+#id\.clockdiv > div{
+	color: white;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#id\.clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+#id\.clockdiv div > span:hover{
+	background: white;
+	color: #00BF96;
+	font-weight: bold;
+}
+#id\.clockdiv div > span.finish:hover{
+	background: red;
+	color: white;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+.finish.days, .finish.hours,
+.finish.minutes, .finish.seconds {
+	color: red;
+}
+
+.paragraph a{
+	display: inline-block;
+	border: 1px solid black;
+
+	padding-left: 20px;
+	padding-right: 20px;
+
+	background-color: #00BF96;
+}
+.paragraph a:hover{
+	background-color: #FFF;
+	color: #00BF96;
+	font-weight: bold;
+}
+
+.btn-margin{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.btn-margin-top{
+	margin-top: 20px;
+}
+
+.btn-margin-bottom{
+	margin-bottom: 20px;
+}
+
+.btn-format{
+	font-size: 20px;
+}
+
+.btn-format a{
+	border-radius: 4px;
+}
+
+.hide {
+	display: none;
+}
+
+.infoFont {
+	font-family: "Lucida Console", Courier, monospace;
+	color: red;
+}
